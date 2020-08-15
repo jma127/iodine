@@ -6,7 +6,7 @@ SERVER = ../bin/iodined
 
 OS = `echo $(TARGETOS) | tr "a-z" "A-Z"`
 ARCH = `uname -m`
-HEAD_COMMIT = `git rev-parse --short HEAD`
+HEAD_COMMIT = custom
 
 LIBPATH = -L.
 LDFLAGS +=  -lz `sh osflags $(TARGETOS) link` $(LIBPATH)
