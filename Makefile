@@ -56,7 +56,7 @@ iodine-latest:
 	@echo "Create date: " > iodine-latest/VERSION.txt
 	@LANG=en_US date >> iodine-latest/VERSION.txt
 	@echo "Git version: " >> iodine-latest/VERSION.txt
-	@git rev-parse HEAD >> iodine-latest/VERSION.txt
+	@echo "custom" >> iodine-latest/VERSION.txt
 	@for i in README.md CHANGELOG; do cp $$i iodine-latest/$$i.txt; done
 	@unix2dos iodine-latest/*
 
